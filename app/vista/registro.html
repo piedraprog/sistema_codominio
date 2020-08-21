@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condominio || Registro</title>
+    <link rel="stylesheet" href="css/estiloregistro.css">
+    <link rel="stylesheet" href="css/bootstrap4/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="user-registro" id="user-registro">
+            <h1>Registro de Usuario</h1>
+            <button id="btn" class="btn btn-block bg-secondary btn-lg" onclick="user_admin()" style="color:white;">registrarme como Admin</button>
+
+            <form id="formulario-user">
+                <hr>
+                <input type="hidden" id="user-id">
+                <label>usuario</label><input type="text" id="user-nombre"><br><br>
+                <label>Correo</label><input type="text" id="user-correo"><br><br>
+                <label>Contraseña</label><input type="text" id="user-pass"><br><br>
+
+                <label for=""><input type="checkbox" name="check" id="">Acepto haber leído los<a href="#">TERMINOS DE USO</a> y <a href="#">POLITICAS DE PRIVACIDAD</a></label><br>
+                <button class="btn btn-block bg-info btn-lg" type="submit">registrarme</button><br>
+                <a class="btn  bg-info btn-lg" href="index.html">volver al inicio</a>
+                <a class="btn  bg-info btn-lg" href="login.php">Iniciar Sesion</a>
+            </form>
+        </div>
+
+
+        <div class="admin-registro " id="admin-registro">
+
+            <h1>Registro de Administrador</h1>
+
+            <button id="btn" class="btn btn-block bg-secondary btn-lg" onclick="admin_user()" style="color:white;">registrarme como usuario</button>
+            <form id="formulario-admin">
+                <hr>
+
+                <input type="hidden" id="admin-id">
+                <label for="">Nombre</label><input class="input" type="text" id="admin-nombre"><br><br>
+                <label for="">Apellido</label><input type="text" id="admin-ape"><br><br>
+                <label for="">Cedula</label><input type="text" id="admin-ced"><br><br>
+                <label for="">Correo</label><input type="text" id="admin-correo"><br><br>
+                <label for="">Contraseña</label><input type="text" id="admin-pass"><br><br>
+
+                <label for=""><input type="checkbox" name="check" id="">Acepto haber leído los<a href="#">TERMINOS DE USO</a> y <a href="#"> POLITICAS DE PRIVACIDAD</a></label><br>
+
+                <button class="btn btn-block bg-info btn-lg" type="submit">registrarme</button><br>
+                <a class="btn  bg-info btn-lg" href="index.html">volver al inicio</a>
+                <a class="btn  bg-info btn-lg" href="login.php">Iniciar Sesion</a>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="js/all.js"></script>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="css/bootstrap4/js/bootstrap.min.js "></script>
+
+<script src="../contolador/registrouser.js"></script>
+
+
+
+</html>
